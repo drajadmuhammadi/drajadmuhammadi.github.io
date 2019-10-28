@@ -5,7 +5,7 @@ var filesToCache = [
 
   '/assets/css/main.css',
   '/assets/css/noscript.css',
-  '/assets/css/fontawesome-all.min.css'
+  '/assets/css/fontawesome-all.min.css',
 
   '/images/pic01.jpg',
   '/images/pic02.jpg',
