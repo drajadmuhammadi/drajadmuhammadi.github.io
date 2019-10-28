@@ -1,0 +1,16 @@
+{
+  "name": "PWA & AWM",
+  "short_name": "P&A",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "images/launcher-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "yellow",
+  "theme_color": "yellow"
+}
