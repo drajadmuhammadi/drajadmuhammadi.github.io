@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html ⚡>
 <head>
-	<title>PWA & AMP</title>
-
+	
 	<meta charset="utf-8" />
+	<title>PWA & AMP</title>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<!-- amp-position -->
+	<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+	<!-- amp-animation -->
+	<script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="manifest" href="manifest.json">
 	<link rel="canonical" href="https://drajadmuhammadi.github.io/">
 
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<!-- amp-css -->
+	<style amp-custom>
+		:root {
+	      --color-primary: #005AF0;
+	      --color-secondary: #00DCC0;
+	      --color-text-light: #fff;
+	      --space-2: 1rem;   /* 16px */
+	      --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+	    }
+		.scrollToTop {
+	      color: var(--color-text-light);
+	      font-size: 1.4em;
+	      box-shadow: var(--box-shadow-1);
+	      width: 50px;
+	      height: 50px;
+	      border-radius: 50%;
+	      border: none;
+	      outline: none;
+	      background: var(--color-primary);
+	      z-index: 9999;
+	      bottom: var(--space-2);
+	      right: var(--space-2);
+	      position: fixed;
+	      opacity: 0;
+	      visibility: hidden;
+	    }
+	</style>
 	
 
 </head>
@@ -25,13 +59,18 @@
 					<h1><a href="index.html">Progresive Web Apps and Accelerate Mobile Page</a></h1>
 					<nav id="nav">
 						<ul>
+							<li>
+								<button id="scrollToTopButton" on="tap:top.scrollTo(duration=200)" class="scrollToTop">Back To Top</button>
+							</li>
 							<li class="special">
 								<a href="#menu" class="menuToggle"><span>Menu</span></a>
 								<div id="menu">
 									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
+										<!-- <li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li> -->
+										<li><a href="#">Generic</a></li>
+										<li><a href="#">Elements</a></li>
 										<li><a href="#">Sign Up</a></li>
 										<li><a href="#">Log In</a></li>
 									</ul>
@@ -42,12 +81,54 @@
 				</header>
 
 			<!-- Banner -->
+				<amp-position-observer
+			      on="enter:hideAnim.start; exit:showAnim.start"
+			      layout="nodisplay">
+			    </amp-position-observer>
+			    <amp-animation id="showAnim" layout="nodisplay">
+			    <script type="application/json">
+			      {
+			        "duration": "200ms",
+			         "fill": "both",
+			         "iterations": "1",
+			         "direction": "alternate",
+			         "animations": [
+			           {
+			             "selector": "#scrollToTopButton",
+			             "keyframes": [
+			               { "opacity": "1", "visibility": "visible" }
+			             ]
+			           }
+			         ]
+			      }
+			    </script>
+			  </amp-animation>
+			  <!-- ... and the second one is for adding the button.-->
+			  <amp-animation id="hideAnim" layout="nodisplay">
+			    <script type="application/json">
+			      {
+			       "duration": "200ms",
+			         "fill": "both",
+			         "iterations": "1",
+			         "direction": "alternate",
+			         "animations": [
+			           {
+			             "selector": "#scrollToTopButton",
+			             "keyframes": [
+			               { "opacity": "0", "visibility": "hidden" }
+			             ]
+			           }
+			         ]
+			     }
+			    </script>
+			  </amp-animation>
+
 				<section id="banner">
 					<div class="inner">
 						<h2>Welcome to PWA AMP Website</h2>
 						<p>Another fine responsive<br />
 						site template freebie<br />
-						crafted by <a href="#">HTML5 UP</a>.</p>
+						crafted by HTML5.</p>
 						<ul class="actions special">
 							<li><a href="#" class="button primary">Activate</a></li>
 						</ul>
