@@ -1,23 +1,30 @@
 var cacheName = 'amp-drajad';
 var filesToCache = [
   '/',
-  '/index.html',
+  '/amp/index.html',
 
-  '/assets/css/main.css',
-  '/assets/css/noscript.css',
-  '/assets/css/fontawesome-all.min.css',
+  'css/page.css',
+  'css/travel.css',
 
-  '/images/pic01.jpg',
-  '/images/pic02.jpg',
-  '/images/pic03.jpg',
+  '/amp/img/travel/hero-1.jpg',
+  '/amp/img/travel/hero-2.jpg',
+  '/amp/img/travel/hero-3.jpg',
+  '/amp/img/travel/blogpost-thumbnail.jpg',
 
-  '/js/jquery.min.js',
-  '/js/jquery.scrollex.min.js',
-  '/js/jquery.scrolly.min.js',
-  '/js/browser.min.js',
-  '/js/breakpoints.min.js',
-  '/js/util.js',
-  '/js/main.js'
+  '/amp/img/travel/activity/discover-electronic-scene.jpg',
+  '/amp/img/travel/activity/discover-electronic-scene@2x.jpg',
+  '/amp/img/travel/activity/skateboard-around-city.jpg',
+  '/amp/img/travel/activity/skateboard-around-city@2x.jpg',
+  '/amp/img/travel/activity/surf-day.jpg',
+  '/amp/img/travel/activity/surf-day@2x.jpg',
+
+  '/amp/img/travel/city/barcelona.jpg',
+  '/amp/img/travel/city/chicago.jpg',
+  '/amp/img/travel/city/new-york.jpg',
+  '/amp/img/travel/city/paris.jpg',
+  '/amp/img/travel/city/reykjavik.jpg',
+  '/amp/img/travel/city/tokyo.jpg',
+  
 ];
 
 /* Start the service worker and cache all of the app's content */
