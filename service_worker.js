@@ -1,29 +1,29 @@
 var cacheName = 'amp-drajad';
 var filesToCache = [
   '/',
-  '/amp/index.html',
+  '/drajadmuhammadi.github.io/index.html',
 
   'css/page.css',
   'css/travel.css',
 
-  '/amp/img/travel/hero-1.jpg',
-  '/amp/img/travel/hero-2.jpg',
-  '/amp/img/travel/hero-3.jpg',
-  '/amp/img/travel/blogpost-thumbnail.jpg',
+  '/drajadmuhammadi.github.io/img/travel/hero-1.jpg',
+  '/drajadmuhammadi.github.io/img/travel/hero-2.jpg',
+  '/drajadmuhammadi.github.io/img/travel/hero-3.jpg',
+  '/drajadmuhammadi.github.io/img/travel/blogpost-thumbnail.jpg',
 
-  '/amp/img/travel/activity/discover-electronic-scene.jpg',
-  '/amp/img/travel/activity/discover-electronic-scene@2x.jpg',
-  '/amp/img/travel/activity/skateboard-around-city.jpg',
-  '/amp/img/travel/activity/skateboard-around-city@2x.jpg',
-  '/amp/img/travel/activity/surf-day.jpg',
-  '/amp/img/travel/activity/surf-day@2x.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/discover-electronic-scene.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/discover-electronic-scene@2x.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/skateboard-around-city.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/skateboard-around-city@2x.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/surf-day.jpg',
+  '/drajadmuhammadi.github.io/img/travel/activity/surf-day@2x.jpg',
 
-  '/amp/img/travel/city/barcelona.jpg',
-  '/amp/img/travel/city/chicago.jpg',
-  '/amp/img/travel/city/new-york.jpg',
-  '/amp/img/travel/city/paris.jpg',
-  '/amp/img/travel/city/reykjavik.jpg',
-  '/amp/img/travel/city/tokyo.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/barcelona.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/chicago.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/new-york.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/paris.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/reykjavik.jpg',
+  '/drajadmuhammadi.github.io/img/travel/city/tokyo.jpg',
   
 ];
 
